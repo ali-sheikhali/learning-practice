@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroHeader from '../components/HeroHeader'
 
 function Home() {
   return (
-    <div></div>
+    <div>
+      <HeroHeader />
+    </div>
   )
 }
 
