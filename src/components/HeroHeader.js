@@ -16,7 +16,7 @@ function HeroHeader() {
           <div className="relative">
             <input
               className="text-black mt-10 w-10/12 mx-auto rounded-3xl py-3 px-5 placeholder:text-gray-300 placeholder:text-sm 
-        focus:outline-none placeholder:text-[12px] "
+        focus:outline-none placeholder:text-[14px] "
               type="text"
               placeholder="Search courses, instructors and organizations..."
             />

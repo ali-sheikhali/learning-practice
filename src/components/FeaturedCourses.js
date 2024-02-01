@@ -16,9 +16,9 @@ function FeaturedCourses() {
         <p className="text-sm text-[#818894]">
           #Browse featured courses and become skillful
         </p>
-        <figure className="relative ">
+        <figure className="relative z-10 ">
           <img className="rounded-md md:h-[400px] md:w-full" src={img1} alt="" />
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <Menu>
               <Menu.Button className="absolute bottom-2 left-2 z-10 bg-gray-300 flex leading-3 rounded-md px-3 py-1 ">
                 More
