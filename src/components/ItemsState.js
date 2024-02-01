@@ -5,18 +5,19 @@ import studentSVG from "../img/student.svg.svg";
 import cousetSVG from "../img/course.svg.svg";
 import videoSVG from "../img/video.svg.svg";
 function ItemsState() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+    const settings = {
+        className: "",
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true
+      };
   return (
     <div className="relative">
-      <div className="w-5/12 mx-auto my-10 rounded-md border md:hidden">
-        <Slider className="mt-5" {...settings}>
-          <div className="p-2">
+      <div className="w-5/12 mx-auto my-16 rounded-md border md:hidden">
+        <Slider className="" {...settings}>
+          <div className="px-2 py-4">
             <div className="bg-blue-500 rounded-md p-1 w-4/12 mx-auto">
               <img className="ml-2 rounded-md" src={teacherSVG} alt="" />
             </div>
@@ -28,7 +29,7 @@ function ItemsState() {
               </p>
             </div>
           </div>
-          <div className="p-2">
+          <div className="px-2 py-4">
             <div className="bg-purple-500 rounded-md p-1 w-4/12 mx-auto">
               <img className="ml-2 rounded-md" src={studentSVG} alt="" />
             </div>
@@ -40,7 +41,7 @@ function ItemsState() {
               </p>
             </div>
           </div>
-          <div className="p-2">
+          <div className="px-2 py-4">
             <div className="bg-green-400 rounded-md p-1 w-4/12 mx-auto">
               <img className="ml-1 rounded-md" src={cousetSVG} alt="" />
             </div>
@@ -52,7 +53,7 @@ function ItemsState() {
               </p>
             </div>
           </div>
-          <div className="p-2">
+          <div className="px-2 py-4">
             <div className="bg-red-400 rounded-md p-1 w-4/12 mx-auto">
               <img className="ml-1 rounded-md" src={videoSVG} alt="" />
             </div>
@@ -66,9 +67,9 @@ function ItemsState() {
           </div>
         </Slider>
       </div>
-      <div className="md:w-8/12 md:mx-auto hidden md:flex md:space-x-3 mt-[-80px]">
-        <div className="p-2 shadow-md rounded-md bg-white">
-          <div className="bg-blue-500 rounded-md p-1 w-4/12 mx-auto mt-3">
+      <div className="md:w-8/12 md:mx-auto hidden md:flex mb-10 md:space-x-3 mt-[-80px]">
+        <div className="px-2 py-4 shadow-md rounded-md bg-white">
+          <div className="bg-blue-500 rounded-2xl p-1 w-4/12 mx-auto mt-3">
             <img className="ml-2 rounded-md" src={teacherSVG} alt="" />
           </div>
           <div className="flex flex-col justify-center space-y-1 text-center mt-5">
@@ -79,8 +80,8 @@ function ItemsState() {
             </p>
           </div>
         </div>
-        <div className="p-2 shadow-md rounded-md bg-white">
-          <div className="bg-purple-500 rounded-md p-1 w-4/12 mx-auto mt-3">
+        <div className="px-2 py-4 shadow-md rounded-md bg-white">
+          <div className="bg-purple-500 rounded-2xl p-1 w-4/12 mx-auto mt-3">
             <img className="ml-3 rounded-md" src={studentSVG} alt="" />
           </div>
           <div className="flex flex-col justify-center space-y-1 text-center mt-5">
@@ -91,8 +92,8 @@ function ItemsState() {
             </p>
           </div>
         </div>
-        <div className="p-2 shadow-md rounded-md bg-white">
-          <div className="bg-green-400 rounded-md p-1 w-4/12 mx-auto mt-3">
+        <div className="px-2 py-4 shadow-md rounded-md bg-white">
+          <div className="bg-green-400 rounded-2xl p-1 w-4/12 mx-auto mt-3">
             <img className="ml-1 rounded-md" src={cousetSVG} alt="" />
           </div>
           <div className="flex flex-col justify-center space-y-1 text-center mt-5">
@@ -103,8 +104,8 @@ function ItemsState() {
             </p>
           </div>
         </div>
-        <div className="p-2 shadow-md rounded-md bg-white">
-          <div className="bg-red-400 rounded-md p-1 w-4/12 mx-auto mt-3">
+        <div className="px-2 py-4 shadow-md rounded-md bg-white">
+          <div className="bg-red-400 rounded-2xl p-1 w-4/12 mx-auto mt-3">
             <img className="ml-2 rounded-md" src={videoSVG} alt="" />
           </div>
           <div className="flex flex-col justify-center space-y-1 text-center mt-5">
