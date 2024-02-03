@@ -5,6 +5,8 @@ import FeaturedCourses from '../components/FeaturedCourses'
 import NewestCourse from '../components/NewestCourse'
 import LatestBundles from '../components/LatestBundles'
 import TrendingCategories from '../components/TrendingCategories'
+import JoinUs from '../components/JoinUs'
+import Become from '../components/Become'
 
 function Home() {
   return (
@@ -15,6 +17,8 @@ function Home() {
       <NewestCourse />
       <LatestBundles />
       <TrendingCategories />
+      <JoinUs />
+      <Become />
     </div>
   )
 }
