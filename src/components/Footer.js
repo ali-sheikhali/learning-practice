@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
 function Footer() {
   return (
-    <div className="my-52">
+    <div className="relative">
       {/* ------------------------------ Join us ------------------------------ */}
       <div
-        className="flex flex-col md:flex-row 
+        className="flex flex-col md:flex-row absolute top-[-50px] left-20 md:left-56
        space-y-5 p-4 justify-around items-center w-8/12 mx-auto rounded-xl bg-[#43D477]"
       >
         <div className="md:w-6/12">
@@ -25,8 +32,13 @@ function Footer() {
           </button>
         </div>
       </div>
-      <div className="w-full bg-[#1F3B64] pt-[100px]  text-white">
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-center w-8/12 mx-auto">
+      {/* ------------------------------ Footer ------------------------------ */}
+
+      <div className="w-full bg-[#1F3B64] pt-[150px]  text-white">
+        <div
+          className="grid grid-cols-1 space-y-5 md:space-y-0 md:space-x-20 md:grid-cols-3 justify-center w-8/12 mx-auto
+        border-b-2"
+        >
           <div className="space-y-3">
             <h2 className="font-bold text-xl">a bout us</h2>
             <p>
@@ -37,20 +49,77 @@ function Footer() {
           </div>
           <div>
             <h2 className="font-bold text-xl">Additional Links</h2>
-            <ul>
-                <Link to="./login" >- <span>Login</span> </Link>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul className="flex flex-col">
+              <Link to="./login">
+                - <span>Login</span>{" "}
+              </Link>
+              <Link to="./register">
+                - <span>Register</span>{" "}
+              </Link>
+              <Link to="./blog">
+                - <span>Blog</span>{" "}
+              </Link>
+              <Link to="./contact-us">
+                - <span>Contact Us</span>{" "}
+              </Link>
+              <Link to="./certificate-validation">
+                - <span>Certificate validation</span>{" "}
+              </Link>
+              <Link to="./become-instructor">
+                - <span>Become instructor</span>{" "}
+              </Link>
+              <Link to="./terms-rules">
+                - <span>Terms & rules</span>{" "}
+              </Link>
+              <Link to="./about-us">
+                - <span>About us</span>{" "}
+              </Link>
+            </ul>
+          </div>
+          <div className="pb-5">
+            <h2 className="font-bold text-xl">Information links</h2>
+            <ul className="flex flex-col">
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
+              <Link to="./#">
+                - <span>Info Link</span>{" "}
+              </Link>
             </ul>
           </div>
         </div>
-        <div>
-
+        <div className=" w-8/12 mx-auto py-10  text-lg relative">
+          <div className="absolute right-0 flex space-x-2">
+            <FaInstagram />
+            <FaWhatsapp />
+            <FaXTwitter />
+            <FaFacebookF />
+            <FaLinkedinIn />
+            <SiGmail />
+          </div>
+        </div>
+        <div className="w-full bg-[#1b3459] text-white">
+          <div className="w-8/12 mx-auto text-center py-3 text-sm">
+            All rights are reserved for learning management system platform
+          </div>
         </div>
       </div>
     </div>
