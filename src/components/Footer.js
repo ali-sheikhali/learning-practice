@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -108,16 +109,33 @@ function Footer() {
         </div>
         <div className=" w-8/12 mx-auto py-10  text-lg relative">
           <div className="absolute right-0 flex space-x-2">
-            <FaInstagram />
-            <FaWhatsapp />
-            <FaXTwitter />
-            <FaFacebookF />
-            <FaLinkedinIn />
-            <SiGmail />
+          <p className="flex leading-4 ">
+            <FaPhoneAlt className="mr-2" />
+            063-011-01-01
+            </p>
+            <Link>
+              <FaInstagram />
+            </Link>
+            <Link>
+              <FaWhatsapp />
+            </Link>
+            <Link>
+              <FaXTwitter />
+            </Link>
+            <Link>
+              <FaFacebookF />
+            </Link>
+            <Link>
+              <FaLinkedinIn />
+            </Link>
+            <Link>
+              <SiGmail />
+            </Link>
+            
           </div>
         </div>
         <div className="w-full bg-[#1b3459] text-white">
-          <div className="w-8/12 mx-auto text-center py-3 text-sm">
+          <div className="w-8/12 mx-auto text-center py-3 text-[12px]">
             All rights are reserved for learning management system platform
           </div>
         </div>
