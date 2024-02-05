@@ -22,7 +22,7 @@ function Home() {
       <JoinUs />
       <Become />
       <ClubPoint />
-      <Footer />
+     
     </div>
   );
 }
