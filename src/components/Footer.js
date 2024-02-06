@@ -13,7 +13,7 @@ function Footer() {
     <div className="relative">
       {/* ------------------------------ Join us ------------------------------ */}
       <div
-        className="flex flex-col md:flex-row absolute top-[-50px] left-20 md:left-56
+        className="flex flex-col md:flex-row absolute top-[-50px] left-20 md:left-60
        space-y-5 p-4 justify-around items-center w-8/12 mx-auto rounded-xl bg-[#43D477]"
       >
         <div className="md:w-6/12">
@@ -112,9 +112,9 @@ function Footer() {
         </div>
         <div className=" w-8/12 mx-auto py-10  text-lg relative">
           <div className="absolute right-0 flex space-x-2">
-          <p className="flex leading-4 ">
-            <FaPhoneAlt className="mr-2" />
-            063-011-01-01
+            <p className="flex leading-4 ">
+              <FaPhoneAlt className="mr-2" />
+              063-011-01-01
             </p>
             <Link>
               <FaInstagram />
@@ -134,7 +134,6 @@ function Footer() {
             <Link>
               <SiGmail />
             </Link>
-            
           </div>
         </div>
         <div className="w-full bg-[#1b3459] text-white">
