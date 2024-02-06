@@ -51,6 +51,9 @@ function Footer() {
           <div>
             <h2 className="font-bold text-xl">Additional Links</h2>
             <ul className="flex flex-col">
+              <Link to="./category">
+                - <span>Category</span>{" "}
+              </Link>
               <Link to="./login">
                 - <span>Login</span>{" "}
               </Link>

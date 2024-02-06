@@ -8,7 +8,6 @@ import TrendingCategories from "../components/TrendingCategories";
 import JoinUs from "../components/JoinUs";
 import Become from "../components/Become";
 import ClubPoint from "../components/ClubPoint";
-import Footer from "../components/Footer";
 
 function Home() {
   return (

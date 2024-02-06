@@ -57,6 +57,9 @@ function NavbarSection2() {
               <Menu.Item className="mx-auto py-1">
                 {({ active }) => <Link>React js</Link>}
               </Menu.Item>
+              <Menu.Item className="mx-auto py-1">
+                {({ active }) => <Link to="/category">All Category</Link>}
+              </Menu.Item>
             </Menu.Items>
           </Menu>
         </div>
