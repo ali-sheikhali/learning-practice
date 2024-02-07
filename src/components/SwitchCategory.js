@@ -4,6 +4,7 @@ import { BiCategory } from "react-icons/bi";
 import { FaBars } from "react-icons/fa6";
 
 function SwitchCategory() {
+    
   const [enabled, setEnabled] = useState(false);
 
   return (
@@ -13,8 +14,8 @@ function SwitchCategory() {
         <FaBars />
       </div>
       <div className="flex flex-col md:flex-row md:space-x-3 space-y-3 md:space-y-0">
-        <div className="flex leading-5">
-          <span className="text-gray-400 mr-2">unComing</span>
+        <div className="flex justify-between leading-5">
+          <p className="text-gray-400 mr-2">unComing</p>
           <Switch
             checked={enabled}
             onChange={setEnabled}
@@ -30,7 +31,7 @@ function SwitchCategory() {
             />
           </Switch>
         </div>
-        <div className="flex leading-5">
+        <div className="flex justify-between leading-5">
           <span className="text-gray-400 mr-2">Free</span>
           <Switch
             checked={enabled}
@@ -47,7 +48,7 @@ function SwitchCategory() {
             />
           </Switch>
         </div>
-        <div className="flex leading-5">
+        <div className="flex justify-between leading-5">
           <span className="text-gray-400 mr-2">Discount</span>
           <Switch
             checked={enabled}
@@ -64,7 +65,7 @@ function SwitchCategory() {
             />
           </Switch>
         </div>
-        <div className="flex leading-5">
+        <div className="flex justify-between leading-5">
           <span className="text-gray-400 mr-2">Download</span>
           <Switch
             checked={enabled}
