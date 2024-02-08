@@ -14,7 +14,7 @@ import img8 from "../img/Figure → Link → update_1.6.jpg.png";
 
 function MainCategory() {
   return (
-    <div className="w-8/12 mx-auto mb-20 flex flex-col md:flex-row">
+    <div className="w-8/12 mx-auto mb-20 flex flex-col md:flex-row ">
       {/* ---------------------------- filter in Mobile screen ---------------------------- */}
       <div className="border rounded-md md:hidden">
         <Menu>
@@ -354,49 +354,52 @@ function MainCategory() {
         </div>
       </div>
       {/* ---------------------------- filter in md screen ---------------------------- */}
-      <div className="hidden md:block md:mt-3 border h-fit py-3 md:w-4/12">
-        <div className="border-b w-10/12 mx-auto py-3">
+      <div className="hidden md:block md:sticky md:right-0 md:top-10 md:mb-4 md:h-full md:mt-6 border rounded-md h-fit py-3 md:w-4/12 ml-2">
+        <div className="border-b w-10/12 mx-auto space-y-4 py-3">
           <h3 className="font-bold mx-5 border-b-4 border-[#43D477] mb-3 w-fit">
             Type
           </h3>
-          <div className="flex justify-between items-center mx-6">
+          <div className="flex justify-between items-center mx-3">
             <p>Course Bundle</p>
             <input type="checkbox" />
           </div>
-          <div className="flex justify-between items-center mx-6">
+          <div className="flex justify-between items-center mx-3">
             <p>Live class</p>
             <input type="checkbox" />
           </div>
-          <div className="flex justify-between items-center mx-6">
+          <div className="flex justify-between items-center mx-3">
             <p>Course</p>
             <input type="checkbox" />
           </div>
-          <div className="flex justify-between items-center mx-6">
+          <div className="flex justify-between items-center mx-3">
             <p>Text course</p>
             <input type="checkbox" />
           </div>
         </div>
-        <div className="border-b w-10/12 mx-auto py-3">
+        <div className="border-b w-10/12 space-y-4 mx-auto py-3">
           <h3 className="font-bold mx-5 border-b-4 border-[#43D477] mb-3 w-fit">
-          More options
+            More options
           </h3>
-          <div className="flex justify-between items-center mx-6">
+          <div className="flex justify-between items-center mx-3">
             <p>Show only subscribe</p>
             <input type="checkbox" />
           </div>
-          <div className="flex justify-between items-center mx-6">
-            <p>Live class</p>
+          <div className="flex justify-between items-center mx-3">
+            <p>Show only certificate included</p>
             <input type="checkbox" />
           </div>
-          <div className="flex justify-between items-center mx-6">
-            <p>Course</p>
+          <div className="flex justify-between items-center mx-3">
+            <p>Show only courses with quiz</p>
             <input type="checkbox" />
           </div>
-          <div className="flex justify-between items-center mx-6">
-            <p>Text course</p>
+          <div className="flex justify-between items-center mx-3">
+            <p>Show only featured courses</p>
             <input type="checkbox" />
           </div>
         </div>
+        <button className="bg-[#43D477] w-10/12 mx-auto flex justify-center items-center  text-white py-1 my-2 rounded-lg">
+          Filter items
+        </button>
       </div>
     </div>
   );
