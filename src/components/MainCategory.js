@@ -354,7 +354,7 @@ function MainCategory() {
         </div>
       </div>
       {/* ---------------------------- filter in md screen ---------------------------- */}
-      <div className="hidden md:block md:sticky md:right-0 md:top-10 md:mb-4 md:h-full md:mt-6 border rounded-md h-fit py-3 md:w-4/12 ml-2">
+      <div className="hidden md:block md:sticky md:right-0 md:top-10 md:mb-5 md:h-full md:mt-6 border rounded-md h-fit py-3 md:w-4/12 ml-2">
         <div className="border-b w-10/12 mx-auto space-y-4 py-3">
           <h3 className="font-bold mx-5 border-b-4 border-[#43D477] mb-3 w-fit">
             Type
